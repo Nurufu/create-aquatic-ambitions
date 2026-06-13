@@ -1,15 +1,18 @@
 package net.davio.create_aquatic_ambitions.kinetics.fan.processing;
 
+import com.simibubi.create.api.registry.CreateBuiltInRegistries;
+import com.simibubi.create.content.kinetics.fan.processing.AllFanProcessingTypes;
 import com.simibubi.create.content.kinetics.fan.processing.FanProcessingType;
 import com.simibubi.create.content.kinetics.fan.processing.FanProcessingTypeRegistry;
 import com.simibubi.create.foundation.recipe.RecipeApplier;
-import com.simibubi.create.foundation.utility.Color;
 import it.unimi.dsi.fastutil.objects.Object2ReferenceOpenHashMap;
+import net.createmod.catnip.theme.Color;
 import net.davio.create_aquatic_ambitions.CreateAquaticAmbitions;
 import net.davio.create_aquatic_ambitions.entry.CCARecipeTypes;
 import net.davio.create_aquatic_ambitions.entry.CCATags;
 import net.davio.create_aquatic_ambitions.kinetics.fan.processing.ChannelingRecipe.ChannelingWrapper;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Registry;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.util.RandomSource;
@@ -43,7 +46,7 @@ public class CCAFanProcessingTypes {
 	}
 
 	private static <T extends FanProcessingType> T register(String id, T type) {
-		FanProcessingTypeRegistry.register(CreateAquaticAmbitions.asResource(id), type);
+		Registry.register(CreateBuiltInRegistries.FAN_PROCESSING_TYPE, CreateAquaticAmbitions.asResource(id), type);
 		return type;
 	}
 
@@ -91,7 +94,7 @@ public class CCAFanProcessingTypes {
 		public @Nullable List<ItemStack> process(ItemStack stack, Level level) {
 			CHANNELING_WRAPPER.setItem(0,stack);
 			Optional<ChannelingRecipe> recipe = CCARecipeTypes.CHANNELING.find(CHANNELING_WRAPPER,level);
-			return recipe.map(channelingRecipe -> RecipeApplier.applyRecipeOn(level, stack, channelingRecipe)).orElse(null);
+			return recipe.map(channelingRecipe -> RecipeApplier.applyRecipeOn(level, stack, channelingRecipe, true)).orElse(null);
 		}
 
 		@Override

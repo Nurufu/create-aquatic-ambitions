@@ -1,11 +1,11 @@
 package net.davio.create_aquatic_ambitions.entry;
 
-import com.simibubi.create.foundation.utility.Components;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 
 public class CCACreativeModeTab {
@@ -27,7 +27,7 @@ public class CCACreativeModeTab {
 	}
 
 	public static final CreativeModeTab BASE_CREATIVE_TAB = FabricItemGroup.builder()
-			.title(Components.translatable("itemGroup.create_aquatic_ambitions"))
+			.title(Component.translatable("itemGroup.create_aquatic_ambitions"))
 			.icon(CCAItems.PRISMARINE_ALLOY::asStack)
 			.build();
 }

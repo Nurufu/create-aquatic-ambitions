@@ -1,7 +1,8 @@
 package net.davio.create_aquatic_ambitions.entry;
 
-import com.jozufozu.flywheel.core.PartialModel;
+//import com.jozufozu.flywheel.core.PartialModel;
 
+import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.davio.create_aquatic_ambitions.CreateAquaticAmbitions;
 
 public class CCAPartials {
@@ -11,7 +12,7 @@ public class CCAPartials {
 			CONDUIT_EYE = block("conduit_eye"),
 			CONDUIT_WIND = block("conduit_wind");
 	private static PartialModel block(String path) {
-		return new PartialModel(CreateAquaticAmbitions.asResource("block/" + path));
+		return PartialModel.of(CreateAquaticAmbitions.asResource("block/" + path));
 	}
 
 	public static void init() {

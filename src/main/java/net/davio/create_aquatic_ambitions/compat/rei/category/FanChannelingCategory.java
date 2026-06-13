@@ -4,7 +4,7 @@ import com.simibubi.create.compat.rei.category.ProcessingViaFanCategory;
 import com.simibubi.create.compat.rei.category.animations.AnimatedKinetics;
 
 import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.gui.element.GuiGameElement;
+import net.createmod.catnip.gui.element.GuiGameElement;
 import net.davio.create_aquatic_ambitions.compat.rei.category.animations.AnimatedConduit;
 import net.davio.create_aquatic_ambitions.kinetics.fan.processing.ChannelingRecipe;
 import net.minecraft.client.gui.GuiGraphics;

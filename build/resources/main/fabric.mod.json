@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "create_aquatic_ambitions",
+  "version": "1.2+1.20.1",
+  "name": "Create Aquatic Ambitions",
+  "description": "Create Mod Addon that adds new, unique bulk processing along with fun recipes.",
+  "authors": [
+    "Davi Oliva",
+    "Bab (port)"
+  ],
+  "contact": {
+    "sources": "https://github.com/davioliva16/create-aquatic-ambitions"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.davio.create_aquatic_ambitions.CreateAquaticAmbitions"
+    ],
+    "client": [
+      "net.davio.create_aquatic_ambitions.CreateAquaticAmbitionsClient"
+    ],
+    "rei_client": [
+      "net.davio.create_aquatic_ambitions.compat.rei.CCAREI"
+    ],
+    "jei_mod_plugin": [
+      "net.davio.create_aquatic_ambitions.compat.jei.CCAJEI"
+    ]
+  },
+  "mixins": [
+    "create_aquatic_ambitions.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "fabric-api": ">=0.92.9+1.20.1",
+    "create": "6.0.8.1+build.1744-mc1.20.1",
+    "minecraft": "1.20.1"
+  }
+}

@@ -6,6 +6,7 @@ import java.util.function.Supplier;
 import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
 import com.simibubi.create.content.processing.recipe.ProcessingRecipeSerializer;
 import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
+import com.simibubi.create.foundation.utility.CreateLang;
 import net.davio.create_aquatic_ambitions.CreateAquaticAmbitions;
 import net.davio.create_aquatic_ambitions.kinetics.fan.processing.ChannelingRecipe;
 import net.minecraft.core.Registry;
@@ -14,7 +15,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.Container;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
-import com.simibubi.create.foundation.utility.Lang;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.Level;
 
@@ -28,7 +28,7 @@ public enum CCARecipeTypes implements IRecipeTypeInfo {
 	private final Supplier<RecipeType<?>> type;
 
 	CCARecipeTypes(Supplier<RecipeSerializer<?>> serializerSupplier) {
-		String name = Lang.asId(name());
+		String name = CreateLang.asId(name());
 		id = CreateAquaticAmbitions.asResource(name);
 		serializerObject = Registry.register(BuiltInRegistries.RECIPE_SERIALIZER, id, serializerSupplier.get());
 		typeObject = simpleType(id);
