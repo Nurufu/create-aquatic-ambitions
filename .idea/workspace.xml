@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fce1f509-c6cf-4e38-be52-5d8f975f78fb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/CreateAquaticAmbitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/CreateAquaticAmbitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/compat/jei/CCAJEI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/compat/jei/CCAJEI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/compat/jei/category/animations/AnimatedConduit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/compat/jei/category/animations/AnimatedConduit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/compat/rei/CCAREI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/compat/rei/CCAREI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/compat/rei/category/FanChannelingCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/compat/rei/category/FanChannelingCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/compat/rei/category/animations/AnimatedConduit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/compat/rei/category/animations/AnimatedConduit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/entry/CCABlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/entry/CCABlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/entry/CCACreativeModeTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/entry/CCACreativeModeTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/entry/CCAPartials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/entry/CCAPartials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/entry/CCARecipeTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/entry/CCARecipeTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/kinetics/fan/processing/CCAFanProcessingTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/davio/create_aquatic_ambitions/kinetics/fan/processing/CCAFanProcessingTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
